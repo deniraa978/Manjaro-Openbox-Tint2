@@ -1,0 +1,7 @@
+#!/bin/bash
+pidof dunst && killall dunst
+dunst &
+
+#notify-send "message one"
+#notify-send -t 6000 "  Screenshot Taken" && scrot -q 100 -c -d 5
+notify-send -t 6000 " 🦊 Images Saved" && scrot -q 100 -c -d 5 

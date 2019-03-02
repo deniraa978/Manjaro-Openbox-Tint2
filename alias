@@ -1,0 +1,105 @@
+alias dots='cd ~/.dotfiles/'
+# Quick Switch To Directories
+alias down='cd ~/Downloads'
+alias code='cd ~/Code'
+alias blog='cd ~/Blog'
+alias pen='cd ~/PenTest'
+
+# Quick Config Editing
+alias i3config='vim ~/.config/i3/config'
+alias vimrc='vim ~/.vimrc'
+alias bashrc='vim ~/.bashrc'
+alias zshrc='vim ~/.zshrc'
+alias aliasadd='vim ~/.alias'
+alias xresources='vim ~/.Xresources'
+alias polybarconf='vim ~/.config/polybar/config'
+alias reload='source ~/.bashrc'
+alias htop='htop -u maman'
+alias ket='ufetch'
+alias ket2='neofetch --w3m ~/Pictures/Kuya.jpg'
+alias ket3='show_info'
+alias ket4='sysinfo'
+alias colors='colortest'
+alias colors2='colorbar'
+alias colors3='colorhex'
+alias colors4='colorline'
+alias colors5='colorline-short'
+alias colors6='colorpanes'
+alias pipes='pipes-diagonal'
+alias pipes2='pipes-vertical'
+alias notif='pomodoro'
+alias block='c-abcdef'
+alias block2='candy-eater'
+alias block3='c-bars'
+alias block4='c-batman'
+alias block5='c-block'
+alias block6='c-blocks'
+alias block7='c-blocks2'
+alias block8='c-candy'
+alias block10='c-digdug'
+alias warna1='c-hashbang'
+alias warna2='c-hexblock'
+alias warna3='c-hypnotoad'
+alias warna4='c-invaders'
+alias warna5='c-panes'
+alias warna6='c-poke'
+alias warna7='c-rupees'
+alias warna8='c-scheme'
+alias warna9='c-scheme-alt'
+alias warna10='c-slendy'
+alias warna11='c-spooky'
+alias warna12='c-streaks'
+alias warna13='c-table'
+alias warna14='c-table-alt'
+alias warna15='c-tvs'
+alias tengkorak='c-skulls'
+alias tengkorak2='c-skulls2'
+alias sholat='prayer-time'
+alias scrot='~/.scripts/jepret'
+alias capture='~/.scripts/capture'
+alias screenfetch='~/.scripts/screenFetch-master/screenfetch-dev'
+alias winbox='wine ~/.local/bin/winbox.exe'
+alias led-on='xset led 3'
+alias android='scrcpy'
+
+# Miscellaneous Commands
+alias ls="ls --group-directories-first --time-style=+'%d.%m.%Y %H:%M' --color=auto -hFX"
+alias ll="ls -l --group-directories-first --time-style=+'%d.%m.%Y %H:%M' --color=auto -F"
+alias la="ls -la --group-directories-first --time-style=+'%d.%m.%Y %H:%M' --color=auto -F"
+alias grep='grep --color=tty -d skip'
+alias google='ping -c1 8.8.8.8'
+alias cp='cp -i'
+alias tcolor='for i in {0..255}; do printf "\x1b[38;5;${i}mcolor%-5i\x1b[0m" $i ; if ! (( ($i + 1 ) % 8 )); then echo ; fi ; done'
+alias df='df -h'
+alias free='free -m'
+alias rm='rm -i'
+alias pastebin="nc termbin.com 9999"
+alias msf="sudo msfconsole --quiet -y ~/.msf4/database.yml"
+alias add_alias="vim ~/.alias"
+alias polybarconf="vim ~/.config/polybar/config"
+alias pen="cd ~/PenTest"
+alias mpv="mpv --shuffle"
+alias getip='grep -oE "\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b"'
+alias getemail="grep -Eiorh '([[:alnum:]_.-]+@[[:alnum:]_.-]+?\.[[:alpha:].]{2,6})' "$@" *"
+alias kali="docker run -it --net=host -e DISPLAY=$DISPLAY -p 8080:8080 -v /tmp/.X11-unix/:/tmp/.X11-unix kali-rolling"
+alias sshloadkey='eval "$(ssh-agent)" && ssh-add'
+alias nmaplivehost="awk '/is up/ {print up}; {gsub (/\(|\)/,""); up = $NF}'"
+
+# Gentoo commands
+alias gentoo-update-repos="emerge-webrsync"
+alias gentoo-remove-packages="emerge --depclean && revdep-rebuild"
+alias gentoo-update-system="emerge --update --deep --with-bdeps=y --newuse @world"
+
+# Arch and Manjaro
+alias update='sudo pacman -Sy --noconfirm'
+alias upgrade='sudo pacman -Syyu'
+alias install='sudo pacman -S'
+alias uninstall='sudo pacman -Rs'
+alias search='pacman -Ss'
+alias show='pacman -Si'
+alias need='pacman -Qi'
+alias missing='pacman -Qk'
+alias trash='pacman -Qdt'
+alias clean='sudo pacman -Sc'
+alias trim-root='sudo fstrim -v /'
+alias trim-home='sudo fstrim -v /home'
