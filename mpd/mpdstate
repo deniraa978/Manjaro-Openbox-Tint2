@@ -1,0 +1,23 @@
+sw_volume: 0
+audio_device_state:1:My ALSA Device
+audio_device_state:1:my_fifo
+state: play
+current: 4
+time: 256.360000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Avril Lavigne - Innocence - Lyrics (Terjemahan Indonesia).mp4
+1:iwan fals- Kemesraan.mp3
+2:iwan fals- Yang Terlupakan.mp3
+3:Because of You - Kelly Clarkson - Lyrics (Terjemahan Indonesia).mp4
+4:From This Moment On - Shania Twain - Lyrics (Terjemahan Indonesia).mp4
+5:Someone Like You - Adele - Lyrics (Terjemahan Indonesia).mp4
+6:videoplayback.mp4
+7:Wish You Were Here - Avril Lavigne - Lyrics - Terjemahan Indonesia.mp4
+playlist_end

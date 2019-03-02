@@ -1,0 +1,61 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+# If you want to use GNOME config tools...
+#
+#if test -x /usr/lib/openbox/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/openbox/gnome-settings-daemon &
+#elif which gnome-settings-daemon >/dev/null 2>&1; then
+#  gnome-settings-daemon &
+#fi
+
+# If you want to use XFCE config tools...
+#
+#xfce-mcs-manager &
+## GNOME PolicyKit and Keyring
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Starts Nitogen and restore wallpaper from previous session
+#nitrogen --restore &
+
+# Wallpapers random
+#feh --bg-max --randomize ~/Wallpapers/* &
+#while true; do feh --randomize --bg-fill ~/Wallpapers; sleep 600; done &
+~/.scripts/wallrandom
+
+# Start up the panel task bar
+~/.config/tint2/launch.sh &
+#(sleep 3s && tint2) &
+#fbpanel &
+#plank &
+
+# Start up Icon menu in desktop
+#idesk &
+
+# Start up Polybar
+#sh ~/.config/polybar/launch.sh &amp;
+#/home/maman/.config/lemonbar/transbar
+
+# Start up Network
+nm-applet &
+
+# Start the Clipboard manager after 3 seconds wait
+#(sleep 3s && clipit) &
+
+# Start volume manager after 3 seconds
+(sleep 3s && volumeicon) &
+
+# Conky
+#conky --daemonize &
+#/home/maman/.scripts/audacious-conky
+
+# Start Composite manager
+#xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &
+#xcompmgr -fF -t-5 -l-5 -r4.2 -o.55 -D2 -m.83 &
+compton &
+
+# Start screensaver
+xscreensaver -no-splash &

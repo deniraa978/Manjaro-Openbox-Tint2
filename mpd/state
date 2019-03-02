@@ -1,0 +1,35 @@
+sw_volume: 36
+audio_device_state:1:Pulse Output
+audio_device_state:1:my_fifo
+state: play
+current: 16
+time: 9.015000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 5
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:BEST 43 Lagu Terbaik Peterpan Full Album .webm
+1:NOAH Jalani Mimpi.mp4
+2:Noah Tak Lagi Sama.mp4
+3:NOAH - Cinta Bukan Dusta.webm
+4:NOAH - Suara Pikiranku.mkv
+5:MONA LATUMAHINA - PALENG BAE .webm
+6:Nada Latuharhary - Buku Cinta.mkv
+7:Nada Latuharhary - Cukup Beta Yang Terluka.webm
+8:Nada Latuharhary - Kasih Hati Par Beta.mkv
+9:Nada Latuharhary - Jujur Saja.mkv
+10:NOAH terbaru Perlahan Pudar.mp4
+11:제이플라 2018 - J Fla .mp4
+12:PARODY BLACKPINK KOPLO - HARDOLIN.mkv
+13:018-Al-Kahf.mp3
+14:036-Yaasiin.mp3
+15:055-Ar-Rahmaan.mp3
+16:056-Al-Waaqiah.mp3
+17:067-Al-Mulk.mp3
+18:091-Asy-Syams.mp3
+19:093-Adh-Dhuhaa.mp3
+playlist_end
